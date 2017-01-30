@@ -1,0 +1,204 @@
+QWidget {
+    background: rgb(225, 225, 225);
+    color: black;
+    selection-background-color: #30826E;
+    border: 1px solid;
+    border-color: rgb(120, 120, 120);
+    border-radius: 0px;
+    padding : 10px
+}
+
+QProgressBar {
+    padding: 0px;
+    text-align: center
+}
+
+
+QProgressBar::chunk {
+    background-color: #30826E
+}
+
+QScrollBar:vertical {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    width: 30px;
+    margin: 18px 0px 18px 0px;
+    padding: 0px
+}
+
+QScrollBar::handle:vertical {
+    background: #30826E;
+    min-height: 30px;
+    min-width: 20px
+}
+
+QScrollBar::add-line:vertical {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    height: 20px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin
+}
+
+QScrollBar::sub-line:vertical {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    height: 20px;
+    subcontrol-position: top;
+    subcontrol-origin: margin
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    width: 3px;
+    height: 3px;
+    background: black
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none
+}
+
+QScrollBar:horizontal {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    height: 30px;
+    margin: 0 18px 0 18px;
+    padding: 0px
+}
+
+QScrollBar::handle:horizontal {
+    background: #30826E;
+    min-height: 20px;
+    min-width: 30px;
+}
+
+QScrollBar::add-line:horizontal {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    width: 20px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    background: rgb(225, 225, 225);
+    width: 20px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+}
+QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: 2px solid;
+    border-color: rgb(120, 120, 120);
+    width: 3px;
+    height: 3px;
+    background: black;
+}
+
+QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none
+}
+
+QListWidget::item:selected{
+    background: #30826E
+}
+
+QListWidget::item:hover{
+    background: #43B599
+}
+
+QMenu {
+    background: rgb(225, 225, 225);
+    border: 0px solid;
+    padding: 0px 0px 0px 0px;
+
+}
+
+QMenuBar {
+    background: rgb(225, 225, 225);
+    border: 0px solid;
+    border-color: rgb(120, 120, 120);
+    padding: 0px
+}
+
+QMenuBar::item {
+    background: rgb(225, 225, 225)
+}
+
+QMenuBar::item:selected{
+    background: #30826E
+}
+
+QMessageBox {
+    background: rgb(225, 225, 225)
+}
+
+QLabel {
+    border: 0px
+           
+}
+
+QPushButton:hover{
+    background-color: #30826E
+}
+
+
+QTabWidget::pane{
+    border: 1px solid;
+    border-color: rgb(120, 120, 120)
+}
+
+QTabWidget::tab-bar {
+    background-color: rgb(225, 225, 225);
+    border: 1px solid;
+    border-color: rgb(120, 120, 120)
+}
+
+QTabBar::tab {
+    background: rgb(225, 225, 225);
+    padding: 10px;
+    border: 1px solid;
+    border-color: rgb(120, 120, 120)
+
+}
+
+QTabBar::tab:selected, QTabBar::tab:hover {
+    background-color : #30826E;
+    border: 1px solid #30826E
+
+}
+
+QCheckBox {
+    spacing: 0px;
+    padding: 0px;
+    border: 0 px
+           
+}
+
+QCheckBox::indicator:unchecked
+{
+    image: url(C:/Users/Jonas/Documents/Dropbox/python/chimney_PySide/graphics_out/checkbox_unchecked.png)
+}
+
+QCheckBox::indicator:unchecked:hover
+{
+    image: url(C:/Users/Jonas/Documents/Dropbox/python/chimney_PySide/graphics_out/checkbox_unchecked_focus.png)
+}
+
+QCheckBox::indicator:checked
+{
+    image: url(C:/Users/Jonas/Documents/Dropbox/python/chimney_PySide/graphics_out/checkbox_checked.png)
+}
+
+QCheckBox::indicator:checked:hover
+{
+    image: url(C:/Users/Jonas/Documents/Dropbox/python/chimney_PySide/graphics_out/checkbox_checked_focus.png)
+}
