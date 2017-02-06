@@ -2,6 +2,7 @@ import sgtk
 import sys
 import tank
 import ast
+import os
 
 def shotgunInfo(context):
     current_engine = sgtk.platform.current_engine()
