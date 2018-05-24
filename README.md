@@ -28,11 +28,11 @@ A couple of lines are needed in the before_app_launch.py hook in order to set en
 # OCIO workflow in short
 
 We basically have three different lut modes that we need to keep track on:
-PROJECT_LUT
-SHOT_LUT
-SHOT_AND_PROJECT_LUT
+- PROJECT_LUT
+- SHOT_LUT
+- SHOT_AND_PROJECT_LUT
 
-Breakdown and examples:
+### Breakdown and examples:
 
 OCIO config for PROJECT_LUT
 ```yaml
@@ -41,13 +41,13 @@ OCIO config for PROJECT_LUT
 - !<FileTransform> {src: '${PROJECT_LUT}', interpolation: linear}
 ```
 
-Example 1:
+##### Example 1:
 We have a linearized alexa plate that needs to have the alexa to rec709 lut applied
 1. Apply lut for project colorspace - Plate is linear and project colorspace is linear, therefore nothing would happen here
 2. Apply inverse of process space for project lut - Since the alexa lut has AlexaLogC colorspace as process space, we apply a linear to AlexaLogC transform
 3. Apply project lut - Now the plate is prepped and ready to have the alexa to rec709 lut applied
 
-Example 2:
+##### Example 2:
 We have a plate in AlexaLogC colorspace that needs to have the alexa to rec709 lut applied
 1. Apply lut for project colorspace - Plate is AlexaLogC and project colorspace is AlexaLogC, so here we linearize the plate
 2. Apply inverse of process space for project lut - Since the alexa lut has AlexaLogC colorspace as process space, we apply a linear to AlexaLogC transform, so basically we go back to where we were in the first place, but this is needed in order to preserve flexibility for differenet colorspaces 
